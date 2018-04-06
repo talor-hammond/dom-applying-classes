@@ -4,10 +4,12 @@
 document.addEventListener('DOMContentLoaded', start)
 
 function start () {
-  
+
   one()
   two()
   three()
+
+  makeVisible()
 
 }
 
@@ -38,3 +40,10 @@ function three() {
 }
 
 // CREATE FUNCTION makeVisible HERE
+function makeVisible() {
+
+  var invisibleDiv = document.getElementsByClassName('invisible')[0]
+
+  invisibleDiv.classList.add('visible')
+
+}
